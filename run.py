@@ -1,6 +1,6 @@
 # import all classes here
 from passenger_class import *
-
+from spaceship_class import *
 
 
 # Create objects here
@@ -13,6 +13,9 @@ passenger5 = Passenger("Chewbaca", "Solofriend", "Wookie", "64d8aa5dw")
 passenger6 = Passenger("R2", "D2", "Droid", "iuiq87d7")
 
     # Generate three spaceships
+spaceship1 = Spaceship("Crunch", "Tardis", "Supermega fast9489")
+spaceship2 = Spaceship("Kirk", "SSS Enterprise", "kos787fast")
+spaceship3 = Spaceship("Solo", "Millennium Falcon", "BOOM!6579")
 
     # Gerneate three expeditions
         # Keep list of  generated expoiditions ( add to empty list of expeditions)
