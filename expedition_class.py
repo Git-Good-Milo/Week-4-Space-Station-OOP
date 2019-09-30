@@ -24,8 +24,6 @@ class Expedition():
         else:
             return False
 
-
-
         # We want to send a dictionary with
         # Origin, Destination, Ship, passengers
     def expo_details(self):
@@ -36,8 +34,24 @@ class Expedition():
                 "Passenger List": self.__passenger_list
             }
             return expo_details
+    # You can also use the bellow method to iterate over all the expeditions
+    # Use a getter method and call it with your expidition index in the for loop of expedition_list
+    def get_origin(self):
+        return self.__origin
 
+    def get_destination(self):
+        return self.__destination
 
+    def get_ship(self):
+        return self.__spaceship
+
+    def get_passenger_list(self):
+        return self.__passenger_list
+
+    # Generally wouldnt use the bellow statement as it contains a print in the ethod which is bad practice
+    def print_list_passengers(self):
+        for passenger in self.get_passenger_list():
+            print('Name: ' + passenger.f_name, 'Species: ' + passenger.species, 'IDR: ' + passenger.dna_reg )
 
 # An origin (probably always Gazorpazorp),
 # Should have a destination,

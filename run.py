@@ -49,15 +49,26 @@ expedition1.add_passenger_to_list(passenger4)
 
 expedition2.add_passenger_to_list(passenger2)
 expedition2.add_passenger_to_list(passenger3)
-print(expedition2.expo_details())
+#print(expedition2.expo_details())
 
 expedition3.add_passenger_to_list(passenger5)
 expedition3.add_passenger_to_list(passenger6)
 
     # iterate over list of expeditions and print
-for list in expedition_list:
-    for expo in list.expo_details():
-        print(expo, list.expo_details()[expo])
+for expedition in expedition_list:
+    print(expedition.get_destination(), expedition.get_origin(), expedition.get_ship().identify_by_name())
+
+expedition1.print_list_passengers()
+
+# Use method get_details as dicitonary
+    #print(expedition.expo_details()["Origin"], expedition.expo_details()["Destination"], expedition.expo_details()['Ship'].identify_by_name())
+# Get out origin, destination,  and ship
+# Print them out in a nice way
+
+
+# for list in expedition_list:
+#     for key in list.expo_details():
+#         print(key, list.expo_details()[key])
 
     # #iterate over expiditions
         # Iterate over list of passenger objects
@@ -65,9 +76,9 @@ for list in expedition_list:
 
 
 # Create a while loop here
-    # use input() to get iser imput and generated objects manually
+    # use input() to get user imput and generated objects manually
 
-# - AS a user i can add a pseenger to an expidiotion
-# - As a user i can list all expiditions
-# - As a user i can create passengers
-# - As a user i can list passengers in 1 expedition
+# - AS a user i can add a pseenger to an expidition (Done)
+# - As a user i can list all expiditions (not done)
+# - As a user i can create passengers (Done)
+# - As a user i can list passengers in 1 expedition (not done)
