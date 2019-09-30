@@ -1,6 +1,7 @@
 # import all classes here
 from passenger_class import *
 from spaceship_class import *
+from expedition_class import *
 
 
 # Create objects here
@@ -18,6 +19,9 @@ spaceship2 = Spaceship("Kirk", "SSS Enterprise", "kos787fast")
 spaceship3 = Spaceship("Solo", "Millennium Falcon", "BOOM!6579")
 
     # Gerneate three expeditions
+expedition1 = Expedition("Alderon", "Millennium Falcon")
+expedition2 = Expedition("Bettlegeus", "SSS Enterprise")
+expedition3 = Expedition("Jupitor", "Tardis")
         # Keep list of  generated expoiditions ( add to empty list of expeditions)
         # Assign a space ship to each one
             # should be able to assign on creation of the object or
