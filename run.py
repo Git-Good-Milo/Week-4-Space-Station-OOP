@@ -3,7 +3,6 @@ from passenger_class import *
 from spaceship_class import *
 from expedition_class import *
 
-
 # Create objects here
     # Generate six passengers
 passenger1 = Passenger("Floopy", "Doop", "Cronenburg", "lskne5w7")
@@ -19,16 +18,27 @@ spaceship2 = Spaceship("Kirk", "SSS Enterprise", "kos787fast")
 spaceship3 = Spaceship("Solo", "Millennium Falcon", "BOOM!6579")
 
     # Gerneate three expeditions
-expedition1 = Expedition("Alderon", "Millennium Falcon")
-expedition2 = Expedition("Bettlegeus", "SSS Enterprise")
-expedition3 = Expedition("Jupitor", "Tardis")
-        # Keep list of  generated expoiditions ( add to empty list of expeditions)
-        # Assign a space ship to each one
-            # should be able to assign on creation of the object or
-            # should be able to assign post-facto
+expedition1 = Expedition("Alderon", spaceship3)
+expedition2 = Expedition("Bettlegeus", spaceship2)
+expedition3 = Expedition("Jupitor", spaceship1)
+
+
 
 
     # Assign to each expidition, 2 passengers (append) (method)
+expedition1.add_passenger_to_list(passenger1)
+expedition1.add_passenger_to_list(passenger4)
+print(expedition1.expo_details())
+print(expedition1.expo_details()['Passenger List']) #List
+print(expedition1.expo_details()['Passenger List'][0]) # Passenger
+print(expedition1.expo_details()['Passenger List'][0].species) # String
+
+expedition2.add_passenger_to_list(passenger2)
+expedition2.add_passenger_to_list(passenger3)
+print(expedition2.expo_details())
+
+expedition3.add_passenger_to_list(passenger5)
+expedition3.add_passenger_to_list(passenger6)
 
     # iterate over list of expeditions and print
 
