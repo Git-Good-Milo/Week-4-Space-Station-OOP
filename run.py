@@ -1,10 +1,16 @@
 # import all classes here
-
+from passenger_class import *
 
 
 
 # Create objects here
     # Generate six passengers
+passenger1 = Passenger("Floopy", "Doop", "Cronenburg", "lskne5w7")
+passenger2 = Passenger("Bird", "Person", "Giant man bird thing", "rngorihg5")
+passenger3 = Passenger("Queen", "Killer", "Xenomorph", "oifhorgn8")
+passenger4 = Passenger("Rick", "Sanchez", "Humanoid", "jfoww7887")
+passenger5 = Passenger("Chewbaca", "Solofriend", "Wookie", "64d8aa5dw")
+passenger6 = Passenger("R2", "D2", "Droid", "iuiq87d7")
 
     # Generate three spaceships
 
